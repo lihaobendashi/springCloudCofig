@@ -1,19 +1,5 @@
-﻿spring:  
-  profiles:
-    #开发环境  
-    active:
-    - dev
-spring:  
+﻿ spring:  
   profiles: dve
   application: 
     name: dve  
----
-spring:  
-  profiles: prod
-  application: 
-    name: prod  
----
-spring:  
-  profiles: test
-  application: 
-    name: test   
+ 
