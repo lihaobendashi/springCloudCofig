@@ -4,6 +4,7 @@
   tomcat:
     uri-encoding: UTF-8
 spring:
+  profile: dev
   application:
     name: fatherProject-config #对外暴露的微服务名称
 eureka: 
