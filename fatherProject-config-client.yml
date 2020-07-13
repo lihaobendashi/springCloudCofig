@@ -1,0 +1,13 @@
+﻿server:
+  port: 8201
+  session-timeout: 30
+  tomcat:
+    uri-encoding: UTF-8
+spring:
+  application:
+    name: fatherProject-config #对外暴露的微服务名称
+eureka: 
+ client:  
+   service-url: 
+     #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  #单机
+    defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/,http://eureka7001.com:7001/eureka/
