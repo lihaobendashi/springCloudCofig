@@ -1,14 +1,15 @@
-server:
-  port: 8201
-  session-timeout: 30
-  tomcat:
-    uri-encoding: UTF-8
 spring:
-  profile: dev
+  profiles:
+    active:
+      - dev
+---
+spring:
+  profiles: dev     #开发环境
   application:
-    name: fatherProject-config #对外暴露的微服务名称
-eureka: 
- client:  
-   service-url: 
-     #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  #单机
-    defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/,http://eureka7001.com:7001/eureka/
+    name: microservicecloud-config-atguigu-dev
+---
+spring:
+  profiles: test   #测试环境
+  application:
+    name: microservicecloud-config-atguigu-test
+#  请保存为UTF-8格式 
