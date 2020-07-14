@@ -1,4 +1,4 @@
-﻿server:
+server:
   port: 8201
   session-timeout: 30
   tomcat:
